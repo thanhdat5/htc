@@ -60,9 +60,5 @@
 				esc_url( get_author_posts_url( (int) get_the_author_meta( 'ID' ) ) )
 			);
 		?>
-		<hr>
-		<?php
-			get_template_part( 'author', 'bio' );
-		?>
 	</footer><!-- /.entry-meta -->
 </article><!-- /#post-<?php the_ID(); ?> -->

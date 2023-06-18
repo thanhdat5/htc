@@ -2,9 +2,6 @@
 /**
  * The template for displaying the archive loop.
  */
-
-htc_viglacera_content_nav( 'nav-above' );
-
 if ( have_posts() ) :
 ?>
 	<div class="row">
@@ -23,7 +20,4 @@ if ( have_posts() ) :
 	</div>
 <?php
 endif;
-
 wp_reset_postdata();
-
-htc_viglacera_content_nav( 'nav-below' );

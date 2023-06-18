@@ -93,12 +93,3 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 	</header>
 
 	<main class="htc-main">
-		<?php
-		// If Single or Archive (Category, Tag, Author or a Date based page).
-		if (is_single() || is_archive()) :
-		?>
-			<div class="row">
-				<div class="col-md-8 col-sm-12">
-				<?php
-			endif;
-				?>

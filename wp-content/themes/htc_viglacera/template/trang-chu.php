@@ -10,7 +10,7 @@ get_header();
 the_post();
 $header_logo = get_theme_mod('header_logo');
 ?>
-<div class="htc-home">
+<div class="htc-home htc-page">
 	<div class="htc-home-banner">
 		<div class="htc-slider">
 			<div class="htc-slide-item" style="background-image: url(http://localhost/htc/wp-content/uploads/2023/06/home-banner.png);">
@@ -415,7 +415,6 @@ $header_logo = get_theme_mod('header_logo');
 							$q->the_post();
 							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 							$image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png');
-							$file_pdf = get_field('file_pdf');
 							$term_1_list = get_the_terms(get_the_ID(), 'thuong-hieu');
 							$term_2_list = get_the_terms(get_the_ID(), 'nhom-san-pham');
 						?>
@@ -542,7 +541,6 @@ $header_logo = get_theme_mod('header_logo');
 							$q->the_post();
 							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 							$image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png');
-							$file_pdf = get_field('file_pdf');
 						?>
 							<div class="col-lg-4 col-md-6">
 								<a href="<?php echo get_the_permalink(); ?>" class="htc-project-item">
@@ -617,7 +615,6 @@ $header_logo = get_theme_mod('header_logo');
 							$q->the_post();
 							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 							$image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png');
-							$file_pdf = get_field('file_pdf');
 						?>
 							<div class="col-lg-4 col-md-6">
 								<a href="<?php echo get_the_permalink(); ?>" class="htc-news-item">

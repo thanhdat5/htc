@@ -1,50 +1,32 @@
 <?php
+
 /**
  * The template for displaying content in the index.php template.
  */
+$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+$image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png');
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-sm-6' ); ?>>
-	<div class="card mb-4">
-		<header class="card-body">
-			<h2 class="card-title">
-				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'htc_viglacera' ), the_title_attribute( array( 'echo' => false ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h2>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-4 col-md-6'); ?>>
+	<a href="<?php echo get_the_permalink(); ?>" class="htc-news-item">
+		<?php
+		if (has_category('tin-tuc', $post->ID)) {
+		?>
+			<div class="htc-news-date"><?php echo get_the_date(); ?></div>
+		<?php
+		}
+		?>
+		<div class="htc-news-image">
+			<img src="<?php echo $image_url; ?>" alt="<?php echo get_the_title(); ?>" />
+		</div>
+		<div class="htc-news-body">
+			<h2 class="htc-news-title"><?php echo get_the_title(); ?></h2>
 			<?php
-				if ( 'post' === get_post_type() ) :
+			if (get_the_excerpt()) {
 			?>
-				<div class="card-text entry-meta">
-					<?php
-						htc_viglacera_article_posted_on();
-
-						$num_comments = get_comments_number();
-						if ( comments_open() && $num_comments >= 1 ) :
-							echo ' <a href="' . esc_url( get_comments_link() ) . '" class="badge badge-pill bg-secondary float-end" title="' . esc_attr( sprintf( _n( '%s Comment', '%s Comments', $num_comments, 'htc_viglacera' ), $num_comments ) ) . '">' . $num_comments . '</a>';
-						endif;
-					?>
-				</div><!-- /.entry-meta -->
+				<div class="htc-news-excerpt"><?php echo get_the_excerpt(); ?></div>
 			<?php
-				endif;
+			}
 			?>
-		</header>
-		<div class="card-body">
-			<div class="card-text entry-content">
-				<?php
-					if ( has_post_thumbnail() ) {
-						echo '<div class="post-thumbnail">' . get_the_post_thumbnail( get_the_ID(), 'large' ) . '</div>';
-					}
-
-					if ( is_search() ) {
-						the_excerpt();
-					} else {
-						the_content();
-					}
-				?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . esc_html__( 'Pages:', 'htc_viglacera' ) . '</span>', 'after' => '</div>' ) ); ?>
-			</div><!-- /.card-text -->
-			<footer class="entry-meta">
-				<a href="<?php the_permalink(); ?>" class="btn btn-outline-secondary"><?php esc_html_e( 'more', 'htc_viglacera' ); ?></a>
-			</footer><!-- /.entry-meta -->
-		</div><!-- /.card-body -->
-	</div><!-- /.col -->
+		</div>
+	</a>
 </article><!-- /#post-<?php the_ID(); ?> -->
