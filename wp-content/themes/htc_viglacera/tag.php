@@ -9,7 +9,7 @@ get_header();
 <div class="htc-posts htc-page">
 	<div class="htc-page-cover">
 		<div class="container">
-			<h3 class="htc-page-subtitle">Thẻ bài viết</h3>
+			<h3 class="htc-page-subtitle"><?php esc_html_e('Thẻ bài viết', 'htc_viglacera'); ?></h3>
 			<h1 class="htc-page-title">
 				<?php echo $category_description; ?>
 			</h1>

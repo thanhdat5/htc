@@ -90,7 +90,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 				<div class="htc-post-meta">
 					<div class="htc-pm-wp">
 						<span>
-							<span>Thương hiệu:</span>
+							<span><?php esc_html_e('Thương hiệu', 'htc_viglacera'); ?>:</span>
 							<span>
 								<?php
 								foreach ($term_1_list as $term) {
@@ -102,7 +102,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 							</span>
 						</span>
 						<span>
-							<span>Nhóm sản phẩm:</span>
+							<span><?php esc_html_e('Nhóm sản phẩm', 'htc_viglacera'); ?>:</span>
 							<span>
 								<?php
 								foreach ($term_2_list as $term) {
@@ -122,7 +122,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if ($term_1_list) {
 					?>
 						<div class="htc-product-attr">
-							<div><b>Loại sản phẩm</b></div>
+							<div><b><?php esc_html_e('Loại sản phẩm', 'htc_viglacera'); ?></b></div>
 							<div>
 								<?php
 								foreach ($term_1_list as $term) {
@@ -141,7 +141,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if (get_field('kich_thuoc')) {
 					?>
 						<div class="htc-product-attr">
-							<div><b>Kích thước</b></div>
+							<div><b><?php esc_html_e('Kích thước', 'htc_viglacera'); ?></b></div>
 							<div><span><?php echo get_field('kich_thuoc'); ?></span></div>
 						</div>
 					<?php
@@ -152,7 +152,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if (get_field('vat_lieu')) {
 					?>
 						<div class="htc-product-attr">
-							<div><b>Vật liệu</b></div>
+							<div><b><?php esc_html_e('Vật liệu', 'htc_viglacera'); ?></b></div>
 							<div><span><?php echo get_field('vat_lieu'); ?></span></div>
 						</div>
 					<?php
@@ -161,7 +161,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 				</div>
 				<div class="htc-product-contact">
 					<b>
-						<span>Hotline hỗ trợ:</span>
+						<span><?php esc_html_e('Hotline hỗ trợ', 'htc_viglacera'); ?>:</span>
 						<a href="tel:<?php echo get_theme_mod('htc_hotline'); ?>">
 							<span><?php echo get_theme_mod('htc_hotline'); ?></span>
 						</a>
@@ -178,7 +178,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if (get_field('thong_tin_san_pham')) {
 					?>
 						<div class="htc-product-sect">
-							<h4 class="htc-product-sect-title">Thông tin sản phẩm</h4>
+							<h4 class="htc-product-sect-title"><?php esc_html_e('Thông tin sản phẩm', 'htc_viglacera'); ?></h4>
 							<div>
 								<?php echo get_field('thong_tin_san_pham'); ?>
 							</div>
@@ -191,7 +191,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if (get_field('xuat_xu')) {
 					?>
 						<div class="htc-product-sect">
-							<h4 class="htc-product-sect-title">Xuất xứ</h4>
+							<h4 class="htc-product-sect-title"><?php esc_html_e('Xuất xứ', 'htc_viglacera'); ?></h4>
 							<div>
 								<?php echo get_field('xuat_xu'); ?>
 							</div>
@@ -204,7 +204,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if (get_field('tinh_nang_san_pham')) {
 					?>
 						<div class="htc-product-sect">
-							<h4 class="htc-product-sect-title">Tính năng sản phẩm</h4>
+							<h4 class="htc-product-sect-title"><?php esc_html_e('Tính năng sản phẩm', 'htc_viglacera'); ?></h4>
 							<div>
 								<?php echo get_field('tinh_nang_san_pham'); ?>
 							</div>
@@ -217,7 +217,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 					if (get_field('thong_so_ky_thuat')) {
 					?>
 						<div class="htc-product-sect">
-							<h4 class="htc-product-sect-title">Thông số kỹ thuật</h4>
+							<h4 class="htc-product-sect-title"><?php esc_html_e('Thông số kỹ thuật', 'htc_viglacera'); ?></h4>
 							<div>
 								<?php echo get_field('thong_so_ky_thuat'); ?>
 							</div>
@@ -229,7 +229,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 				<div class="col-lg-3">
 					<div class="htc-product-sidebar">
 						<div class="htc-product-related mb-4">
-							<h4>Có thể bạn quan tâm</h4>
+							<h4><?php esc_html_e('Có thể bạn quan tâm', 'htc_viglacera'); ?></h4>
 							<div class="htc-product-related-body">
 								<?php
 								$related = get_posts(
@@ -268,7 +268,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 						</div>
 
 						<div class="htc-product-related">
-							<h4>Tất cả sản phẩm</h4>
+							<h4><?php esc_html_e('Tất cả sản phẩm', 'htc_viglacera'); ?></h4>
 							<div class="htc-product-related-body">
 								<?php
 								$related = get_posts(

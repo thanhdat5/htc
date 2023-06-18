@@ -14,7 +14,7 @@ the_post();
 <div class="htc-products htc-page">
 	<div class="htc-page-cover">
 		<div class="container">
-			<h3 class="htc-page-subtitle">Viglacera</h3>
+			<h3 class="htc-page-subtitle"><?php esc_html_e('Viglacera', 'htc_viglacera'); ?></h3>
 			<h1 class="htc-page-title"><?php echo get_the_title(); ?></h1>
 		</div>
 	</div>

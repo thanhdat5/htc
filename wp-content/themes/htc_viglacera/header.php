@@ -83,9 +83,9 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 						)
 					);
 					?>
-					<a href="#" class="htc-btn htc-btn-secondary px-4">
+					<a href="<?php echo (esc_url(home_url()) . '/lien-he'); ?>" class="htc-btn htc-btn-secondary px-4">
 						<i class="fa-solid fa-phone-volume me-2"></i>
-						<span>Liên hệ ngay</span>
+						<span><?php esc_html_e('Liên hệ ngay', 'htc_viglacera'); ?></span>
 					</a>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->

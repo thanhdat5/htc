@@ -10,7 +10,7 @@ if (get_post_type() === 'san-pham') {
 	<div class="htc-posts htc-page">
 		<div class="htc-page-cover">
 			<div class="container">
-				<h3 class="htc-page-subtitle">Sản phẩm</h3>
+				<h3 class="htc-page-subtitle"><?php esc_html_e('Sản phẩm', 'htc_viglacera'); ?></h3>
 				<h1 class="htc-page-title"><?php echo single_term_title(); ?></h1>
 			</div>
 		</div>
@@ -67,7 +67,7 @@ if (get_post_type() === 'san-pham') {
 	<div class="htc-posts htc-page">
 		<div class="htc-page-cover">
 			<div class="container">
-				<h3 class="htc-page-subtitle">Tất cả bài viết</h3>
+				<h3 class="htc-page-subtitle"><?php esc_html_e('Tất cả bài viết', 'htc_viglacera'); ?></h3>
 				<h1 class="htc-page-title">
 					<?php
 					if (is_day()) :

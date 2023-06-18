@@ -13,7 +13,7 @@ the_post();
 	<div class="htc-page-cover">
 		<div class="container">
 			<h3 class="htc-page-subtitle"><?php echo get_the_title(); ?></h3>
-			<h1 class="htc-page-title">CÔNG TY CP VẬN TẢI & XÂY DỰNG HTC</h1>
+			<h1 class="htc-page-title"><?php esc_html_e('CÔNG TY CP VẬN TẢI & XÂY DỰNG HTC', 'htc_viglacera'); ?></h1>
 		</div>
 	</div>
 	<div class="htc-page-content">

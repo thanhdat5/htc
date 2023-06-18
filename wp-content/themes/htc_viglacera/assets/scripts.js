@@ -7,6 +7,11 @@ jQuery(function () {
         jQuery(`#${elId}`).addClass('active');
         jQuery('.htc-image-preview').attr('src', jQuery(`#${elId} img`).attr('src'));
     })
+
+    jQuery(".htc-scroll-top").on('click', function () {
+        jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    })
 })
 
 let startCount = false;
@@ -34,5 +39,11 @@ jQuery(window).on('scroll', function () {
             }
             animate();
         });
+    }
+
+    if(jQuery(window).scrollTop() > 200){
+        jQuery(".htc-scroll-top").addClass('show');
+    }else{
+        jQuery(".htc-scroll-top").removeClass('show');
     }
 });

@@ -46,7 +46,7 @@
 		if (get_the_tags($post->ID)) {
 		?>
 			<div class="htc-post-tags">
-				<span class="me-2">Từ khóa:</span>
+				<span class="me-2"><?php esc_html_e('Từ khóa', 'htc_viglacera'); ?>:</span>
 				<?php
 				foreach (get_the_tags($post->ID) as $tag) {
 					echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
@@ -64,7 +64,7 @@
 
 		<!-- Post Related -->
 		<div class="htc-post-related">
-			<h4>Có thể bạn quan tâm</h4>
+			<h4><?php esc_html_e('Có thể bạn quan tâm', 'htc_viglacera'); ?></h4>
 			<ul>
 				<?php
 				$related = get_posts(

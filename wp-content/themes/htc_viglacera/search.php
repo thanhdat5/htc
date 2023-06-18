@@ -9,7 +9,7 @@ get_header();
 <div class="htc-posts htc-page">
 	<div class="htc-page-cover">
 		<div class="container">
-			<h3 class="htc-page-subtitle">Tìm kiếm</h3>
+			<h3 class="htc-page-subtitle"><?php esc_html_e('Tìm kiếm', 'htc_viglacera'); ?></h3>
 			<h1 class="htc-page-title">
 				<?php printf(esc_html__('Kết quả tìm kiếm cho: %s', 'htc_viglacera'), get_search_query()); ?>
 			</h1>

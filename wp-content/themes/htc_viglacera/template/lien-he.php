@@ -13,7 +13,7 @@ the_post();
 	<div class="htc-page-cover">
 		<div class="container">
 			<h3 class="htc-page-subtitle"><?php echo get_the_title(); ?></h3>
-			<h1 class="htc-page-title">CÔNG TY CP VẬN TẢI & XÂY DỰNG HTC</h1>
+			<h1 class="htc-page-title"><?php esc_html_e('CÔNG TY CP VẬN TẢI & XÂY DỰNG HTC', 'htc_viglacera'); ?></h1>
 		</div>
 	</div>
 	<div class="container">
@@ -26,13 +26,13 @@ the_post();
 								<?php echo get_theme_mod('htc_map'); ?>
 							</div>
 							<div class="htc-contact-info">
-								Địa chỉ: <?php echo get_theme_mod('htc_address'); ?>
+								<?php esc_html_e('Địa chỉ', 'htc_viglacera'); ?>: <?php echo get_theme_mod('htc_address'); ?>
 							</div>
 
 							<div class="htc-contact-info">
-								Số điện thoại: <a href="tel:<?php echo get_theme_mod('htc_phone'); ?>"><?php echo get_theme_mod('htc_phone'); ?></a>
+								<?php esc_html_e('Số điện thoại', 'htc_viglacera'); ?>: <a href="tel:<?php echo get_theme_mod('htc_phone'); ?>"><?php echo get_theme_mod('htc_phone'); ?></a>
 								<span class="px-3">-</span>
-								Email: <a href="mailto:<?php echo get_theme_mod('htc_email'); ?>"><?php echo get_theme_mod('htc_email'); ?></a>
+								<?php esc_html_e('Email', 'htc_viglacera'); ?>: <a href="mailto:<?php echo get_theme_mod('htc_email'); ?>"><?php echo get_theme_mod('htc_email'); ?></a>
 							</div>
 
 							<div class="htc-contact-socials">

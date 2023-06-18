@@ -9,7 +9,7 @@ get_header();
 <div class="htc-posts htc-page">
 	<div class="htc-page-cover">
 		<div class="container">
-			<h3 class="htc-page-subtitle">Bài viết đăng bởi</h3>
+			<h3 class="htc-page-subtitle"><?php esc_html_e('Tác giả', 'htc_viglacera'); ?></h3>
 			<h1 class="htc-page-title">
 				<?php
 				printf(esc_html__('%s', 'htc_viglacera'), get_the_author());

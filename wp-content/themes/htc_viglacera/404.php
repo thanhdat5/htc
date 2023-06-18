@@ -13,7 +13,7 @@ $search_enabled = get_theme_mod('search_enabled', '1'); // Get custom meta-value
 <div class="htc-404 htc-page">
 	<div class="htc-page-cover">
 		<div class="container">
-			<h3 class="htc-page-subtitle">404 Not Found</h3>
+			<h3 class="htc-page-subtitle"><?php esc_html_e('404 Page Not Found', 'htc_viglacera'); ?></h3>
 			<h1 class="htc-page-title">
 				<?php esc_html_e('Không tìm thấy trang', 'htc_viglacera'); ?>
 			</h1>
