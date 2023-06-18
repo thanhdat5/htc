@@ -13,44 +13,83 @@ $header_logo = get_theme_mod('header_logo');
 <div class="htc-home htc-page">
 	<div class="htc-home-banner">
 		<div class="htc-slider">
-			<div class="htc-slide-item" style="background-image: url(http://localhost/htc/wp-content/uploads/2023/06/home-banner.png);">
-				<div class="htc-slide-inner">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5">
-								<h3>
-									<spn>Công Ty CP Vận Tải & Xây Dựng HTC</spn>
-								</h3>
-								<h1>Tạo dựng uy tín thành công</h1>
-								<p>Đơn vị chúng tôi luôn có những nguyên tắc và chuẩn mực trong các hoạt động kinh doanh và thi công công trình nhằm hướng đến sự phát triển lâu dài, vững mạnh - chiếm được lòng tin của quý đối tác.</p>
-								<div class="htc-slide-actions">
-									<a href="#" class="htc-btn htc-btn-primary"><span>Đăng ký tư vấn</span></a>
-									<a href="#" class="htc-btn htc-btn-secondary"><span>Liên hệ báo giá</span></a>
+			<?php
+			if (get_field('slide_1_hinh_anh')) {
+			?>
+				<div class="htc-slide-item" style="background-image: url(<?php echo get_field('slide_1_hinh_anh'); ?>);">
+					<div class="htc-slide-inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5">
+									<h3>
+										<spn><?php echo get_field('slide_1_tieu_de_phu'); ?></spn>
+									</h3>
+									<h1><?php echo get_field('slide_1_tieu_de'); ?></h1>
+									<p><?php echo get_field('slide_1_mo_ta_ngan'); ?></p>
+									<div class="htc-slide-actions">
+										<?php echo get_field('slide_1_button_1'); ?>
+										<?php echo get_field('slide_1_button_2'); ?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="htc-slide-item" style="background-image: url(http://localhost/htc/wp-content/uploads/2023/06/home-banner.png);">
-				<div class="htc-slide-inner">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5">
-								<h3>
-									<spn>Công Ty CP Vận Tải & Xây Dựng HTC</spn>
-								</h3>
-								<h1>Tạo dựng uy tín thành công</h1>
-								<p>Đơn vị chúng tôi luôn có những nguyên tắc và chuẩn mực trong các hoạt động kinh doanh và thi công công trình nhằm hướng đến sự phát triển lâu dài, vững mạnh - chiếm được lòng tin của quý đối tác.</p>
-								<div class="htc-slide-actions">
-									<a href="#" class="htc-btn htc-btn-primary"><span>Đăng ký tư vấn</span></a>
-									<a href="#" class="htc-btn htc-btn-secondary"><span>Liên hệ báo giá</span></a>
+			<?php
+			}
+			?>
+
+			<?php
+			if (get_field('slide_2_hinh_anh')) {
+			?>
+				<div class="htc-slide-item" style="background-image: url(<?php echo get_field('slide_2_hinh_anh'); ?>);">
+					<div class="htc-slide-inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5">
+									<h3>
+										<spn><?php echo get_field('slide_2_tieu_de_phu'); ?></spn>
+									</h3>
+									<h1><?php echo get_field('slide_2_tieu_de'); ?></h1>
+									<p><?php echo get_field('slide_2_mo_ta_ngan'); ?></p>
+									<div class="htc-slide-actions">
+										<?php echo get_field('slide_2_button_1'); ?>
+										<?php echo get_field('slide_2_button_2'); ?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			<?php
+			}
+			?>
+
+			<?php
+			if (get_field('slide_3_hinh_anh')) {
+			?>
+				<div class="htc-slide-item" style="background-image: url(<?php echo get_field('slide_3_hinh_anh'); ?>);">
+					<div class="htc-slide-inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5">
+									<h3>
+										<spn><?php echo get_field('slide_3_tieu_de_phu'); ?></spn>
+									</h3>
+									<h1><?php echo get_field('slide_3_tieu_de'); ?></h1>
+									<p><?php echo get_field('slide_3_mo_ta_ngan'); ?></p>
+									<div class="htc-slide-actions">
+										<?php echo get_field('slide_3_button_1'); ?>
+										<?php echo get_field('slide_3_button_2'); ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 
@@ -58,22 +97,22 @@ $header_logo = get_theme_mod('header_logo');
 		<div class="container">
 			<div class="htc-sect-header">
 				<h4>
-					<span>Công Ty CP Vận Tải & Xây Dựng HTC</span>
+					<span><?php echo get_field('lvhd_tieu_de_phu'); ?></span>
 				</h4>
-				<h2>Lĩnh Vực Hoạt Động</h2>
-				<p>Công ty chúng tôi hoạt động ở một số hạng mục trong quá trình xây dựng dự án</p>
+				<h2><?php echo get_field('lvhd_tieu_de'); ?></h2>
+				<p><?php echo get_field('lvhd_mo_ta_ngan'); ?></p>
 			</div>
 			<div class="htc-sect-body">
 				<div class="row gx-xl-5">
 					<div class="col-md-4">
 						<div class="htc-feature">
 							<div class="htc-feature-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-bildhub/wp-content/uploads/2021/05/img-fcb-crs2.png" alt="" />
+								<img src="<?php echo get_field('lvhd_lv1_icon'); ?>" alt="" />
 							</div>
 							<div class="htc-feature-info">
-								<div class="htc-feature-title">Thi Công Công Trình</div>
+								<div class="htc-feature-title"><?php echo get_field('lvhd_lv1_linh_vuc'); ?></div>
 								<div class="htc-feature-description">
-									Lắp đặt các thiết bị và xây dựng tường bằng bê tông khí cho các công trình.
+									<?php echo get_field('lvhd_lv1_mo_ta'); ?>
 								</div>
 							</div>
 						</div>
@@ -81,12 +120,12 @@ $header_logo = get_theme_mod('header_logo');
 					<div class="col-md-4">
 						<div class="htc-feature active">
 							<div class="htc-feature-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-bildhub/wp-content/uploads/2021/05/img-fcb-crs3.png" alt="" />
+								<img src="<?php echo get_field('lvhd_lv2_icon'); ?>" alt="" />
 							</div>
 							<div class="htc-feature-info">
-								<div class="htc-feature-title">Cung Cấp Vật Liệu</div>
+								<div class="htc-feature-title"><?php echo get_field('lvhd_lv2_linh_vuc'); ?></div>
 								<div class="htc-feature-description">
-									Các vật liệu với chất lượng cao như bê tông khí chưng áp, kính xây dựng và gạch ngói đất sét nung với khả năng chịu nhiệt và chống cháy tốt.
+									<?php echo get_field('lvhd_lv2_mo_ta'); ?>
 								</div>
 							</div>
 						</div>
@@ -94,12 +133,12 @@ $header_logo = get_theme_mod('header_logo');
 					<div class="col-md-4">
 						<div class="htc-feature">
 							<div class="htc-feature-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-bildhub/wp-content/uploads/2021/05/img-fcb-crs1.png" alt="" />
+								<img src="<?php echo get_field('lvhd_lv3_icon'); ?>" alt="" />
 							</div>
 							<div class="htc-feature-info">
-								<div class="htc-feature-title">Phác Thảo Ký Thuật Dự Án</div>
+								<div class="htc-feature-title"><?php echo get_field('lvhd_lv2_linh_vuc'); ?></div>
 								<div class="htc-feature-description">
-									Các bản thiết kế về kết cấu trong và ngoài cho các công trình dự án.
+									<?php echo get_field('lvhd_lv3_mo_ta'); ?>
 								</div>
 							</div>
 						</div>
@@ -115,22 +154,14 @@ $header_logo = get_theme_mod('header_logo');
 				<div class="col-lg-6 pe-xl-5 order-lg-1 order-2">
 					<div class="htc-sect-header">
 						<h4>
-							<span>Về Chúng Tôi</span>
+							<span><?php echo get_field('vct_tieu_de_phu'); ?></span>
 						</h4>
-						<h2 class="mb-4">Công Ty CP Vận Tải & Xây Dựng HTC</h2>
-						<p>Là đơn vị chuyên về xây dựng với những năng lực chủ yếu như</p>
+						<h2 class="mb-4"><?php echo get_field('vct_tieu_de'); ?></h2>
 					</div>
 					<div class="htc-sect-body">
-						<ul>
-							<li>Là công ty xây dựng thi công công trình.</li>
-							<li>Cung cấp vật liệu bê tông khí</li>
-							<li>Thân thiện với môi trường</li>
-						</ul>
-						<p>Đơn vị chúng tôi luôn có những nguyên tắc và chuẩn mực trong các hoạt động kinh doanh và thi công công trình nhằm hướng đến sự phát triển lâu dài, vững mạnh - chiếm được lòng tin của quý đối tác.</p>
+						<?php echo get_field('vct_mo_ta'); ?>
 						<div class="mt-4 mt-xl-5">
-							<a href="#" class="htc-btn htc-btn-primary">
-								<span>Tìm hiểu thêm</span>
-							</a>
+							<?php echo get_field('vct_hanh_dong'); ?>
 						</div>
 					</div>
 				</div>
@@ -138,7 +169,7 @@ $header_logo = get_theme_mod('header_logo');
 					<div class="htc-ha-image">
 						<div class="htc-ha-experience">
 							<div class="year">
-								<span>5</span>
+								<span><?php echo get_field('vct_so_nam_kinh_nghiem'); ?></span>
 								<span>+</span>
 							</div>
 							<div class="info">
@@ -146,7 +177,7 @@ $header_logo = get_theme_mod('header_logo');
 								<b>Kinh nghiệm</b>
 							</div>
 						</div>
-						<img src="https://demo.cmssuperheroes.com/themeforest/wp-bildhub/wp-content/uploads/2021/05/img-about.png" alt="" />
+						<img src="<?php echo get_field('vct_hinh_anh'); ?>" alt="" />
 					</div>
 				</div>
 			</div>
@@ -158,23 +189,18 @@ $header_logo = get_theme_mod('header_logo');
 			<div class="row gx-xl-5 align-items-center">
 				<div class="col-lg-6">
 					<div class="htc-ha-image">
-						<img src="https://cdn.homedit.com/wp-content/uploads/tallest-building-world/Tallest-Buildings-In-The-World.jpg" alt="" />
+						<img src="<?php echo get_field('tnsm_hinh_anh'); ?>" alt="" />
 					</div>
 				</div>
 				<div class="col-lg-6 ps-xl-5">
 					<div class="htc-sect-header">
 						<h4>
-							<span>Tại sao nên chọn Chúng Tôi</span>
+							<span><?php echo get_field('tnsm_tieu_de_phu'); ?></span>
 						</h4>
-						<h2 class="mb-4">Tầm Nhìn Sứ Mệnh & <br />Giá Trị Cốt Lõi</h2>
-						<p>Đơn vị chúng tôi luôn có những nguyên tắc và chuẩn mực trong các hoạt động kinh doanh và thi công công trình nhằm hướng đến sự phát triển lâu dài, vững mạnh - chiếm được lòng tin của quý đối tác.</p>
+						<h2 class="mb-4"><?php echo get_field('tnsm_tieu_de'); ?></h2>
 					</div>
 					<div class="htc-sect-body">
-						<ul>
-							<li>An toàn trong lao động</li>
-							<li>Niềm tin và hạnh phúc cho khách hàng</li>
-							<li>Hướng đến tương lai phát triển mạnh mẽ và bền vững</li>
-						</ul>
+						<?php echo get_field('tnsm_mo_ta'); ?>
 					</div>
 				</div>
 			</div>
@@ -185,85 +211,140 @@ $header_logo = get_theme_mod('header_logo');
 		<div class="container">
 			<div class="htc-sect-header">
 				<h4>
-					<span>Sản phẩm kinh doanh</span>
+					<span><?php echo get_field('spkd_tieu_de_phu'); ?></span>
 				</h4>
-				<h2>Bê tông khí Viglacera</h2>
-				<p>Giải pháp cho ngành xây dựng hiện đại</p>
+				<h2><?php echo get_field('spkd_tieu_de'); ?></h2>
+				<p><?php echo get_field('spkd_mo_ta_ngan'); ?></p>
 			</div>
 			<div class="htc-sect-body">
-				<div class="row  justify-content-center">
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+				<div class="row justify-content-center">
+					<?php
+					if (get_field('spkd_item_1_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_1_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_1_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">LÀM KẾT CẤU SÀN, MÁI</div>
-							<div class="htc-pf-description">Sử dụng rộng rãi và tiện lợi cho kết cấu sàn, mái nhờ khả năng chịu uốn, cải thiện tính chống nóng, chịu lực,...</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_2_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_2_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_2_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">LÀM VÁCH NGĂN, LANH TÔ CỬA</div>
-							<div class="htc-pf-description">Sản phẩm có kết cấu thép vững chắc bên trong ngăn rỉ sét cùng với lớp tường vững chắc bên ngoài</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_3_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_3_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_3_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">SỬA CHỮA, CƠI NỚI, NÂNG TẦNG</div>
-							<div class="htc-pf-description">Khả năng chịu lực tốt, tải trọng nhẹ, không ảnh hưởng đến kết cấu cũ và bền vững theo thời gian.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_4_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_4_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_4_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">LÀM KHUNG NHÀ THÉP TIỀN CHẾ</div>
-							<div class="htc-pf-description">Được sử dụng chủ yếu trong xây nhà tiền chế nhờ ưu điểm kết cấu bền vững, thi công nhanh gọn,...</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_5_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_5_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_5_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">XÂY DỰNG NHÀ DÂN DỤNG</div>
-							<div class="htc-pf-description">Đáp ứng các yêu cầu cao về tiện nghi âm thanh, thẩm mỹ, chống cháy, chịu ẩm,v.v…</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_6_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_6_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_6_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">XÂY DỰNG NHÀ CÔNG NGHIỆP</div>
-							<div class="htc-pf-description">Tính linh hoạt cao, độ bền là giải pháp ưu việt cho ứng dụng làm tường, sàn Nhà xưởng, kho bãi, nhà Yến.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_7_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_7_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_7_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">CÔNG TRÌNH KINH DOANH</div>
-							<div class="htc-pf-description">Tối ưu chi phí, đảm bảo thẩm mỹ là những giải pháp hàng đầu mini store, nhà hàng, quán cà phê nên áp dụng</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<i class="fa-regular fa-circle-check"></i>
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('spkd_item_8_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<?php echo get_field('spkd_icon'); ?>
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('spkd_item_8_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('spkd_item_8_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">CÔNG TRÌNH HOMESTAY, RESORT</div>
-							<div class="htc-pf-description">Dễ dàng uốn cong, tạo hình kiến trúc, bền bỉ là ưu điểm giúp đảm bảo sự độc đáo của homestay.</div>
 						</div>
-					</div>
+					<?php
+					}
+					?>
 				</div>
 			</div>
 		</div>
@@ -275,29 +356,29 @@ $header_logo = get_theme_mod('header_logo');
 				<div class="col-xl-3 col-md-6">
 					<div class="htc-home-stat">
 						<i class="fa-regular fa-face-smile"></i>
-						<b class="value" akhi="382">0</b>
-						<span>Khách hàng</span>
+						<b class="value" akhi="<?php echo get_field('tk_so_khach_hang'); ?>">0</b>
+						<span><?php esc_html_e('Khách hàng', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
 				<div class="col-xl-3 col-md-6">
 					<div class="htc-home-stat">
 						<i class="fa-regular fa-hospital"></i>
-						<b class="value" akhi="28">0</b>
-						<span>Dự án</span>
+						<b class="value" akhi="<?php echo get_field('tk_so_du_an'); ?>">0</b>
+						<span><?php esc_html_e('Dự án', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
 				<div class="col-xl-3 col-md-6">
 					<div class="htc-home-stat">
 						<i class="fa-solid fa-headset"></i>
-						<b class="value" akhi="1463">0</b>
-						<span>Giờ hỗ trợ</span>
+						<b class="value" akhi="<?php echo get_field('tk_so_gio_ho_tro'); ?>">0</b>
+						<span><?php esc_html_e('Giờ hỗ trợ', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
 				<div class="col-xl-3 col-md-6">
 					<div class="htc-home-stat">
 						<i class="fa-regular fa-circle-user"></i>
-						<b class="value" akhi="200">0</b>
-						<span>Nhân viên</span>
+						<b class="value" akhi="<?php echo get_field('tk_so_nhan_vien'); ?>">0</b>
+						<span><?php esc_html_e('Nhân viên', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
 			</div>
@@ -308,85 +389,140 @@ $header_logo = get_theme_mod('header_logo');
 		<div class="container">
 			<div class="htc-sect-header">
 				<h4>
-					<span>Tính Năng Sản Phẩm</span>
+					<span><?php echo get_field('tnsp_tieu_de_phu'); ?></span>
 				</h4>
-				<h2>Tính năng AAC Viglacera</h2>
-				<p>Chúng tôi luôn hướng đến những giá trị, tiêu chuẩn tốt nhất dành cho người sử dụng công trình và người lao động</p>
+				<h2><?php echo get_field('tnsp_tieu_de'); ?></h2>
+				<p><?php echo get_field('tnsp_mo_ta_ngan'); ?></p>
 			</div>
 			<div class="htc-sect-body">
 				<div class="row  justify-content-center">
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon2.png?v=1784" alt="" />
+					<?php
+					if (get_field('tnsp_item_1_icon') && get_field('tnsp_item_1_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_1_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_1_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_1_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">SIÊU CÁCH ÂM</div>
-							<div class="htc-pf-description">Khả năng cách âm từ 40db - 47db, gạch bê tông khí chưng áp cách âm tốt gấp 2 lần gạch xây thông thường.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon3.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_2_icon') && get_field('tnsp_item_2_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_2_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_2_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_2_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">SIÊU CÁCH NHIỆT</div>
-							<div class="htc-pf-description">Bằng 1/4 - 1/5 so với gạch nung, 1/6 gạch bê tông thông thường và giảm tới 40% chi phí điện năng tiêu thụ.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon5.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_3_icon') && get_field('tnsp_item_3_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_3_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_3_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_3_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">TỶ TRỌNG NHẸ</div>
-							<div class="htc-pf-description">Tỷ trọng tương đương 1/2 gạch đặc, 2/3 gạch rỗng 2 lỗ giúp giảm kết cấu móng, dầm, cột, giảm chi phí xây thô từ 10 đến 12%.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon4.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_4_icon') && get_field('tnsp_item_4_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_4_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_4_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_4_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">CHỐNG CHÁY HIỆU QUẢ</div>
-							<div class="htc-pf-description">Tính năng chống cháy đạt tiêu chuẩn cấp 1 Quốc Gia giúp ngăn ngừa cháy lan và khả năng chống cháy từ 4 - 6 giờ đồng hồ.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon8.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_5_icon') && get_field('tnsp_item_5_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_5_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_5_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_5_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">CHỐNG CHẤN ĐỘNG</div>
-							<div class="htc-pf-description">Trọng lượng gạch và tấm bê tông khí thấp nên giảm trọng lực ngôi nhà lên mặt đất. Sản phẩm được ứng dụng phổ biến tại Nhật Bản.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon7.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_6_icon') && get_field('tnsp_item_6_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_6_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_6_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_6_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">THI CÔNG NHANH</div>
-							<div class="htc-pf-description">Dễ dàng khoan, cắt, không cần trát vữa... sản phẩm bê tông khí được đánh giá nhanh hơn nhà truyền thống 50%.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon6.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_7_icon') && get_field('tnsp_item_7_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_7_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_7_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_7_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">THÂN THIỆN MÔI TRƯỜNG</div>
-							<div class="htc-pf-description">Công nghệ sản xuất không nung đốt, hạn chế tối đa phát sinh khí thải, giảm hiệu ứng nhà kính.</div>
 						</div>
-					</div>
-					<div class="col-xxl-3 col-xl-4 col-md-6">
-						<div class="htc-product-feature">
-							<div class="htc-pf-image">
-								<img src="https://theme.hstatic.net/200000020018/1000520384/14/hservice_icon7.png?v=1784" alt="" />
+					<?php
+					}
+					?>
+
+					<?php
+					if (get_field('tnsp_item_8_icon') && get_field('tnsp_item_8_tieu_de')) {
+					?>
+						<div class="col-xxl-3 col-xl-4 col-md-6">
+							<div class="htc-product-feature">
+								<div class="htc-pf-image">
+									<img src="<?php echo get_field('tnsp_item_8_icon'); ?>" alt="" />
+								</div>
+								<div class="htc-pf-title"><?php echo get_field('tnsp_item_8_tieu_de'); ?></div>
+								<div class="htc-pf-description"><?php echo get_field('tnsp_item_8_mo_ta'); ?></div>
 							</div>
-							<div class="htc-pf-title">KÍCH THƯỚC LINH HOẠT</div>
-							<div class="htc-pf-description">Linh hoạt về chiều dài và chiều dày của tấm giúp dễ dàng xử lý các kỹ thuật thi công.</div>
 						</div>
-					</div>
+					<?php
+					}
+					?>
 				</div>
 			</div>
 		</div>
@@ -395,8 +531,8 @@ $header_logo = get_theme_mod('header_logo');
 	<div class="htc-home-products htc-sect">
 		<div class="container">
 			<div class="htc-sect-header">
-				<h2>Sản phẩm nổi bật</h2>
-				<p>Chúng tôi cung cấp tấm bê tông khí với khả năng cách nhiệt, cách âm, chống cháy, chịu chấn động tốt và thân thiện với môi trường.</p>
+				<h2><?php echo get_field('spnb_tieu_de'); ?></h2>
+				<p><?php echo get_field('spnb_mo_ta'); ?></p>
 			</div>
 			<div class="htc-sect-body">
 				<?php
@@ -426,15 +562,15 @@ $header_logo = get_theme_mod('header_logo');
 									<div class="htc-product-body">
 										<div class="htc-product-cat">
 											<?php
-												foreach ($term_1_list as $term) {
-													echo $term->name;
-												}
+											foreach ($term_1_list as $term) {
+												echo $term->name;
+											}
 											?>
 											<span class="px-1">-</span>
 											<?php
-												foreach ($term_2_list as $term) {
-													echo $term->name;
-												}
+											foreach ($term_2_list as $term) {
+												echo $term->name;
+											}
 											?>
 										</div>
 										<a href="<?php echo get_the_permalink(); ?>" class="htc-product-title">
@@ -453,9 +589,7 @@ $header_logo = get_theme_mod('header_logo');
 				}
 				?>
 				<div class="text-center">
-					<a href="#" class="htc-btn htc-btn-secondary">
-						<span>Xem tất cả sản phẩm</span>
-					</a>
+					<?php echo get_field('spnb_hanh_dong'); ?>
 				</div>
 			</div>
 		</div>
@@ -465,50 +599,50 @@ $header_logo = get_theme_mod('header_logo');
 		<div class="container">
 			<div class="htc-sect-header">
 				<h4>
-					<span>Đối tác</span>
+					<span><?php echo get_field('dtcl_tieu_de_phu'); ?></span>
 				</h4>
-				<h2>Đối tác chiến lược</h2>
-				<p>Những đối tác đã tin tưởng vào năng lực của công ty chúng tôi</p>
+				<h2><?php echo get_field('dtcl_tieu_de'); ?></h2>
+				<p><?php echo get_field('dtcl_mo_ta'); ?></p>
 			</div>
 			<div class="htc-sect-body">
 				<div class="row row-cols-5">
 					<div class="col">
-						<a href="#" class="htc-home-partner">
+						<a target="_blank" title="<?php echo get_field('dtcl_dt_1_ten'); ?>" href="<?php echo get_field('dtcl_dt_1_link'); ?>" class="htc-home-partner">
 							<div class="htc-hp-inner">
-								<span><img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Hoa-Phat-HPG-H.png" alt="" /></span>
-								<span><img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Hoa-Phat-HPG-H.png" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_1_logo'); ?>" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_1_logo'); ?>" alt="" /></span>
 							</div>
 						</a>
 					</div>
 					<div class="col">
-						<a href="#" class="htc-home-partner">
+						<a target="_blank" title="<?php echo get_field('dtcl_dt_2_ten'); ?>" href="<?php echo get_field('dtcl_dt_2_link'); ?>" class="htc-home-partner">
 							<div class="htc-hp-inner">
-								<span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lotte_Logo_%282017%29.svg/2560px-Lotte_Logo_%282017%29.svg.png" alt="" /></span>
-								<span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lotte_Logo_%282017%29.svg/2560px-Lotte_Logo_%282017%29.svg.png" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_2_logo'); ?>" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_2_logo'); ?>" alt="" /></span>
 							</div>
 						</a>
 					</div>
 					<div class="col">
-						<a href="#" class="htc-home-partner">
+						<a target="_blank" title="<?php echo get_field('dtcl_dt_3_ten'); ?>" href="<?php echo get_field('dtcl_dt_3_link'); ?>" class="htc-home-partner">
 							<div class="htc-hp-inner">
-								<span><img src="https://hbip.vn/upload/photo/logo-nen-trang-2-9672.png" alt="" /></span>
-								<span><img src="https://hbip.vn/upload/photo/logo-nen-trang-2-9672.png" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_3_logo'); ?>" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_3_logo'); ?>" alt="" /></span>
 							</div>
 						</a>
 					</div>
 					<div class="col">
-						<a href="#" class="htc-home-partner">
+						<a target="_blank" title="<?php echo get_field('dtcl_dt_4_ten'); ?>" href="<?php echo get_field('dtcl_dt_4_link'); ?>" class="htc-home-partner">
 							<div class="htc-hp-inner">
-								<span><img src="https://datnenthaibinh.com/wp-content/uploads/2021/09/bidgroup-logo.png" alt="" /></span>
-								<span><img src="https://datnenthaibinh.com/wp-content/uploads/2021/09/bidgroup-logo.png" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_4_logo'); ?>" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_4_logo'); ?>" alt="" /></span>
 							</div>
 						</a>
 					</div>
 					<div class="col">
-						<a href="#" class="htc-home-partner">
+						<a target="_blank" title="<?php echo get_field('dtcl_dt_5_ten'); ?>" href="<?php echo get_field('dtcl_dt_5_link'); ?>" class="htc-home-partner">
 							<div class="htc-hp-inner">
-								<span><img src="http://localhost/htc/wp-content/uploads/2023/06/hongha.png" alt="" /></span>
-								<span><img src="http://localhost/htc/wp-content/uploads/2023/06/hongha.png" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_5_logo'); ?>" alt="" /></span>
+								<span><img src="<?php echo get_field('dtcl_dt_5_logo'); ?>" alt="" /></span>
 							</div>
 						</a>
 					</div>
@@ -520,11 +654,11 @@ $header_logo = get_theme_mod('header_logo');
 	<div class="htc-home-projects htc-sect">
 		<div class="container">
 			<div class="htc-sect-header">
-				<h2>Dự án nổi bật</h2>
-				<p>HTC luôn có những nguyên tắc và chuẩn mực trong các hoạt động kinh doanh và thi công công trình nhằm hướng đến sự phát triển lâu dài, vững mạnh - chiếm được lòng tin của quý đối tác</p>
+				<h2><?php echo get_field('danb_tieu_de'); ?></h2>
+				<p><?php echo get_field('danb_mo_ta'); ?></p>
 			</div>
 			<div class="htc-sect-body">
-			<?php
+				<?php
 				$args = array(
 					'post_type'           => 'post',
 					'category_name'       => 'du-an',
@@ -561,9 +695,7 @@ $header_logo = get_theme_mod('header_logo');
 				}
 				?>
 				<div class="text-center">
-					<a href="#" class="htc-btn htc-btn-primary">
-						<span>Xem tất cả dự án</span>
-					</a>
+					<?php echo get_field('danb_hanh_dong'); ?>
 				</div>
 			</div>
 		</div>
@@ -573,19 +705,17 @@ $header_logo = get_theme_mod('header_logo');
 		<div class="container">
 			<div class="row gx-xl-5">
 				<div class="col-lg-6">
-					<img src="https://hauserjonesandsas.com/wp-content/uploads/2018/12/HJS-Featured-Images-blog-post-Team-Is-Everything.png" class="w-100" />
+					<img src="<?php echo get_field('lh_hinh_anh'); ?>" class="w-100" />
 				</div>
 				<div class="col-lg-6 ps-xl-5">
 					<div class="htc-sect-header">
 						<h4 class="mb-2">
-							<span>Liên hệ</span>
+							<span><?php echo get_field('lh_tieu_de_phu'); ?></span>
 						</h4>
-						<h2>NHẬN TƯ VẤN MIỄN PHÍ</h2>
+						<h2><?php echo get_field('lh_tieu_de'); ?></h2>
 					</div>
 					<div class="htc-sect-body">
-						<?php
-						echo do_shortcode('[contact-form-7 id="40" title="Form liên hệ"]')
-						?>
+						<?php echo get_field('lh_form_shortcode'); ?>
 					</div>
 				</div>
 			</div>
@@ -595,7 +725,7 @@ $header_logo = get_theme_mod('header_logo');
 	<div class="htc-home-news htc-sect">
 		<div class="container">
 			<div class="htc-sect-header">
-				<h2>Tin tức nổi bật</h2>
+				<h2><?php echo get_field('ttnb_tieu_de'); ?></h2>
 			</div>
 			<div class="htc-sect-body">
 				<?php
@@ -637,9 +767,7 @@ $header_logo = get_theme_mod('header_logo');
 				}
 				?>
 				<div class="text-center">
-					<a href="#" class="htc-btn htc-btn-primary">
-						<span>Xem tất cả tin tức</span>
-					</a>
+					<?php echo get_field('ttnb_hanh_dong'); ?>
 				</div>
 			</div>
 		</div>

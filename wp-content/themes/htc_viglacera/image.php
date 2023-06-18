@@ -59,22 +59,6 @@ get_header();
 				</article><!-- /#post-## -->
 
 				<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-
-					// Parent post navigation.
-					the_post_navigation(
-						array(
-							'prev_text'  => esc_html_x( 'Published in %title', 'Parent post link', 'htc_viglacera' ),
-							'aria_label' => esc_html__( 'Parent post', 'htc_viglacera' ),
-						)
-					);
-
-					endwhile;
-				endif;
-
 				wp_reset_postdata(); // End of the loop.
 			?>
 		</div><!-- /.col -->

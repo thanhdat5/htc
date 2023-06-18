@@ -21,10 +21,16 @@ $image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png
 		<div class="htc-news-body">
 			<h2 class="htc-news-title"><?php echo get_the_title(); ?></h2>
 			<?php
-			if (get_the_excerpt()) {
+			if (has_category('du-an', $post->ID)) {
 			?>
-				<div class="htc-news-excerpt"><?php echo get_the_excerpt(); ?></div>
+				<div class="htc-news-content"><?php echo the_content(); ?></div>
+				<?php
+			} else {
+				if (get_the_excerpt()) {
+				?>
+					<div class="htc-news-excerpt"><?php echo get_the_excerpt(); ?></div>
 			<?php
+				}
 			}
 			?>
 		</div>

@@ -1,12 +1,20 @@
 jQuery(function () {
     jQuery('.htc-slider').slick();
+
+    jQuery('.htc-image-thumbnail').on('click', function () {
+        const elId = jQuery(this).attr('id');
+        jQuery('.htc-image-thumbnail').removeClass('active');
+        jQuery(`#${elId}`).addClass('active');
+        jQuery('.htc-image-preview').attr('src', jQuery(`#${elId} img`).attr('src'));
+    })
 })
 
 let startCount = false;
 jQuery(window).on('scroll', function () {
-    if (!startCount && jQuery(window).scrollTop() >= jQuery(
-        '.htc-home-sales').offset().top + jQuery('.htc-home-sales').
-            outerHeight() - window.innerHeight) {
+    if (!startCount && jQuery(
+        '.htc-home-sales').length && jQuery(window).scrollTop() >= jQuery(
+            '.htc-home-sales').offset().top + jQuery('.htc-home-sales').
+                outerHeight() - window.innerHeight) {
         startCount = true;
         const counters = document.querySelectorAll('.value');
         const speed = 1000;

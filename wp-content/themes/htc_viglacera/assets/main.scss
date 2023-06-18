@@ -747,7 +747,7 @@ body {
     * {
       position: relative;
     }
-    .htc-page-subtitle{
+    .htc-page-subtitle {
       margin-bottom: 16px;
       font-size: 16px;
       text-transform: uppercase;
@@ -762,18 +762,19 @@ body {
       margin-bottom: 0;
       font-size: 32px;
       border-bottom: 1px rgba($color: #000000, $alpha: 0.2);
-      p{
+      p {
         margin-bottom: 0;
       }
     }
   }
-  .htc-page-content{
+  .htc-page-content {
     padding: 60px 0;
-    img{
+    img {
       max-width: 100%;
     }
   }
 }
+
 .htc-sect {
   padding: 80px 0;
 
@@ -1097,6 +1098,18 @@ body {
       font-size: 15px;
       color: #212529;
     }
+    .htc-news-content {
+      margin-top: 16px;
+      font-size: 15px;
+      color: #212529;
+      p,
+      div:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .article-body {
+        display: none;
+      }
+    }
   }
 }
 
@@ -1180,6 +1193,239 @@ body {
     height: 175px;
   }
 }
+
+.htc-single {
+  border-top: 1px solid #eaeaea;
+  padding-top: 24px;
+}
+
+.htc-post {
+  padding-bottom: 60px;
+  .htc-post-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $heading_font_family;
+    margin-bottom: 20px;
+  }
+
+  .htc-post-thumbnail {
+    img {
+      width: 100%;
+    }
+  }
+
+  .htc-post-project {
+    div {
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .htc-post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .htc-pm-wp {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        opacity: 0.8;
+        font-size: 14px;
+        line-height: 1;
+      }
+    }
+    .fcbkbttn_like,
+    .fb-share-button {
+      margin-right: 0 !important;
+    }
+  }
+
+  .htc-post-tags {
+    margin-top: 32px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    span {
+      height: 35px;
+      display: inline-flex;
+      align-items: center;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      height: 35px;
+      background-color: $background_secondary;
+      color: $primary_dark_color;
+      padding: 6px 14px;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      font-weight: 500;
+      &:hover {
+        background-color: $primary_color;
+        color: $white_color;
+      }
+    }
+  }
+
+  .htc-post-comment {
+    margin-top: 32px;
+    overflow: hidden;
+    .fb-comments {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+  }
+
+  .htc-post-related {
+    margin-top: 40px;
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      font-family: $heading_font_family;
+      text-transform: uppercase;
+      color: $primary_color;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 15px;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $background_secondary;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 85px;
+        height: 3px;
+        background-color: $primary_color;
+      }
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        margin-bottom: 8px;
+        a {
+          font-size: 15px;
+          font-weight: 500;
+          color: #232529;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.htc-pagination {
+  margin-top: 40px;
+  .page-numbers,
+  .wp-pagenavi {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    .page-numbers,
+    .previouspostslink,
+    .current,
+    .page,
+    .nextpostslink,
+    .last,
+    .extend {
+      min-width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e8e8e8;
+      font-size: 16px;
+      font-weight: 600;
+      color: $primary_dark_color;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        background-color: $primary_color;
+        border-color: $primary_color;
+        color: $white_color;
+        box-shadow: 0 8px 16px rgba($primary_color, 0.3);
+      }
+    }
+    .current {
+      background-color: $primary_color;
+      border-color: $primary_color;
+      color: $white_color;
+      box-shadow: 0 8px 16px rgba($primary_color, 0.3);
+    }
+  }
+}
+
+.htc-category {
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $heading_font_family;
+    text-transform: uppercase;
+    color: $primary_color;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $background_secondary;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 85px;
+      height: 3px;
+      background-color: $primary_color;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 10px;
+      a {
+        font-size: 15px;
+        font-weight: 700;
+        color: #232529;
+        transition: all ease-in-out 0.3s;
+        text-transform: uppercase;
+        font-family: $heading_font_family;
+        &.active,
+        &:hover {
+          color: $primary_color;
+        }
+      }
+    }
+  }
+}
+
 /**
  * HTC Header
  */
@@ -1241,10 +1487,10 @@ body {
     width: 100%;
     z-index: 999;
     background-color: $white_color;
-    transition: all ease-in-out 0.3s;
     &.is-sticky {
       position: fixed;
       animation: slideDown 0.35s ease-out;
+      border-bottom: 1px solid #eaeaea;
       .navbar {
         .navbar-brand {
           padding: 8px 0;
@@ -1267,6 +1513,7 @@ body {
       padding: 10px 0;
       img {
         height: 64px;
+        margin-top: -10px;
       }
     }
     .nav-link {
@@ -1277,10 +1524,29 @@ body {
       color: $primary_color;
       text-decoration: none;
       transition: all ease-in-out 0.3s;
-      padding: 10px 16px;
+      padding: 16px;
       &:hover,
       &.active {
         color: $secondary_color;
+      }
+    }
+    .dropdown-menu {
+      border: 0;
+      padding: 0;
+      border-radius: 0;
+      min-width: 200px;
+      li {
+        a {
+          padding: 12px 18px;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 700;
+          font-family: $heading_font_family;
+          color: $primary_color;
+          &.active {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -1905,7 +2171,7 @@ body {
     padding: 24px;
     background-color: $background_secondary;
     height: 100%;
-    iframe{
+    iframe {
       width: 100% !important;
       height: calc(418px - 48px);
     }
@@ -1947,9 +2213,195 @@ body {
 /**
  * Posts
  */
-.htc-posts{
+.htc-posts {
   .row {
     --bs-gutter-x: 32px;
     --bs-gutter-y: 40px;
+  }
+  .fcbkbttn_buttons_block {
+    display: none !important;
+  }
+}
+
+/**
+ * Products
+ */
+.htc-products {
+  .row {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 40px;
+  }
+}
+
+.htc-product-description {
+  border-top: 1px rgba($color: #000000, $alpha: 0.1) solid;
+  padding-top: 12px;
+  margin-top: 12px;
+  font-size: 15px;
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.htc-product-attrs {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px rgba($color: #000000, $alpha: 0.1) solid;
+  .htc-product-attr {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    span {
+      display: inline-flex;
+      padding: 4px 16px;
+      border: 1px $secondary_color solid;
+      font-size: 12px;
+      position: relative;
+    }
+  }
+}
+
+.htc-product-contact {
+  margin-top: 24px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .fcbkbttn_like,
+  .fb-share-button {
+    margin: 0 !important;
+  }
+}
+
+.htc-product-sect {
+  margin-bottom: 40px;
+  ul {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  table {
+    border: 1px rgba($color: #000000, $alpha: 0.15) solid;
+    border-collapse: collapse;
+    td {
+      padding: 10px 15px;
+      border: 1px rgba($color: #000000, $alpha: 0.15) solid;
+    }
+  }
+  .htc-product-sect-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $heading_font_family;
+    text-transform: uppercase;
+    color: $primary_color;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $background_secondary;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 85px;
+      height: 3px;
+      background-color: $primary_color;
+    }
+  }
+}
+
+.htc-product-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  .htc-image-thumbnail {
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    border: 1px rgba($color: #000000, $alpha: 0.08) solid;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    img {
+      width: 100%;
+    }
+    &.active {
+      border-color: $secondary_color;
+    }
+  }
+}
+
+.htc-product-sidebar {
+  position: sticky;
+  top: 120px;
+}
+
+.htc-product-related {
+  background-color: $white_color;
+  border: 1px rgba($color: #000000, $alpha: 0.08) solid;
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $heading_font_family;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    background-color: $primary_color;
+    color: $white_color;
+    margin-bottom: 0px;
+  }
+  .htc-product-related-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .htc-pr-item {
+      display: flex;
+      width: 100%;
+      text-decoration: none;
+      color: #232529;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        color: $primary_color;
+        .htc-pr-image {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .htc-pr-image {
+        width: 80px;
+        height: 60px;
+        margin-right: 16px;
+        overflow: hidden;
+        padding: 4px;
+        border: 1px rgba($color: #000000, $alpha: 0.1) solid;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform-origin: center center;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+      .htc-pr-name {
+        flex: 1;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
   }
 }
