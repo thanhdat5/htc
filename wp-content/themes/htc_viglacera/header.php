@@ -22,7 +22,7 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 		<div class="htc-header-top">
 			<div class="container">
 				<div class="htc-ht-inner">
-					<a href="mail:<?php echo get_theme_mod('htc_email'); ?>">
+					<a class="htc-ht-email" href="mail:<?php echo get_theme_mod('htc_email'); ?>">
 						<i class="fa-regular fa-envelope"></i>
 						<span><?php echo get_theme_mod('htc_email'); ?></span>
 					</a>
@@ -30,22 +30,22 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 						<i class="fa-solid fa-phone"></i>
 						<span><?php echo get_theme_mod('htc_hotline'); ?></span>
 					</a>
-					<a href="#">
+					<a class="htc-ht-address" href="#">
 						<i class="fa-solid fa-location-dot"></i>
 						<span><?php echo get_theme_mod('htc_address'); ?></span>
-						<a>
-							<div class="htc-ht-socials">
-								<?php if (get_theme_mod('htc_youtube')) { ?>
-									<a href="<?php echo get_theme_mod('htc_youtube'); ?>">
-										<i class="fa-brands fa-youtube"></i>
-									</a>
-								<?php } ?>
-								<?php if (get_theme_mod('htc_facebook')) { ?>
-									<a href="<?php echo get_theme_mod('htc_facebook'); ?>">
-										<i class="fa-brands fa-facebook-f"></i>
-									</a>
-								<?php } ?>
-							</div>
+					</a>
+					<div class="htc-ht-socials">
+						<?php if (get_theme_mod('htc_youtube')) { ?>
+							<a href="<?php echo get_theme_mod('htc_youtube'); ?>">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						<?php } ?>
+						<?php if (get_theme_mod('htc_facebook')) { ?>
+							<a href="<?php echo get_theme_mod('htc_facebook'); ?>">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -65,12 +65,19 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 					endif;
 					?>
 				</a>
+				<a href="<?php echo (esc_url(home_url()) . '/lien-he'); ?>" class="ms-auto me-3 d-inline-flex d-lg-none htc-btn htc-btn-secondary px-xxl-4 px-3">
+					<i class="fa-solid fa-phone-volume"></i>
+					<span class="ms-2"><?php esc_html_e('Liên hệ ngay', 'htc_viglacera'); ?></span>
+				</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'htc_viglacera'); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div id="navbar" class="collapse navbar-collapse">
+					<button class="htc-close d-inline-flex d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'htc_viglacera'); ?>">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
 					<?php
 					// Loading WordPress Custom Menu (theme_location).
 					wp_nav_menu(
@@ -83,9 +90,9 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 						)
 					);
 					?>
-					<a href="<?php echo (esc_url(home_url()) . '/lien-he'); ?>" class="htc-btn htc-btn-secondary px-4">
-						<i class="fa-solid fa-phone-volume me-2"></i>
-						<span><?php esc_html_e('Liên hệ ngay', 'htc_viglacera'); ?></span>
+					<a href="<?php echo (esc_url(home_url()) . '/lien-he'); ?>" class="d-none d-lg-inline-flex htc-btn-contact htc-btn htc-btn-secondary px-xxl-4 px-3">
+						<i class="fa-solid fa-phone-volume"></i>
+						<span class="ms-2"><?php esc_html_e('Liên hệ ngay', 'htc_viglacera'); ?></span>
 					</a>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->

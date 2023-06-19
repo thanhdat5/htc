@@ -2,8 +2,8 @@
 			<footer class="htc-footer" id="footer">
 				<div class="htc-footer-top">
 					<div class="container">
-						<div class="row gx-xl-5">
-							<div class="col-xl-4">
+						<div class="row gx-md-5">
+							<div class="col-xl-4 col-lg-5 col-md-6">
 								<div class="htc-footer-info">
 									<?php
 									if (is_active_sidebar('footer_column_1_widget_area')) {
@@ -49,16 +49,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-8">
-								<div class="row gx-xl-5 justify-content-end">
-									<div class="col-xl-3">
+							<div class="col-xl-8 col-lg-7 col-md-6">
+								<div class="row gx-md-5 justify-content-end">
+									<div class="col-xl-3 col-md-6">
 										<?php
 										if (is_active_sidebar('footer_column_2_widget_area')) {
 											dynamic_sidebar('footer_column_2_widget_area');
 										}
 										?>
 									</div>
-									<div class="col-xl-3">
+									<div class="col-xl-3 col-md-6">
 										<?php
 										if (is_active_sidebar('footer_column_3_widget_area')) {
 											dynamic_sidebar('footer_column_3_widget_area');

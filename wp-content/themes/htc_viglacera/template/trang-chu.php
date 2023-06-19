@@ -20,7 +20,7 @@ $header_logo = get_theme_mod('header_logo');
 					<div class="htc-slide-inner">
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-5">
+								<div class="col-xl-5 col-md-6">
 									<h3>
 										<spn><?php echo get_field('slide_1_tieu_de_phu'); ?></spn>
 									</h3>
@@ -46,7 +46,7 @@ $header_logo = get_theme_mod('header_logo');
 					<div class="htc-slide-inner">
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-5">
+								<div class="col-xl-5 col-md-6">
 									<h3>
 										<spn><?php echo get_field('slide_2_tieu_de_phu'); ?></spn>
 									</h3>
@@ -72,7 +72,7 @@ $header_logo = get_theme_mod('header_logo');
 					<div class="htc-slide-inner">
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-5">
+								<div class="col-xl-5 col-lg-6">
 									<h3>
 										<spn><?php echo get_field('slide_3_tieu_de_phu'); ?></spn>
 									</h3>
@@ -150,7 +150,7 @@ $header_logo = get_theme_mod('header_logo');
 
 	<div class="htc-home-about htc-sect">
 		<div class="container">
-			<div class="row gx-xl-5 align-items-center">
+			<div class="row gx-lg-5 align-items-center">
 				<div class="col-lg-6 pe-xl-5 order-lg-1 order-2">
 					<div class="htc-sect-header">
 						<h4>
@@ -165,7 +165,7 @@ $header_logo = get_theme_mod('header_logo');
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 order-lg-2 order-1">
+				<div class="col-lg-6 order-lg-2 order-1 mb-lg-0 mb-5">
 					<div class="htc-ha-image">
 						<div class="htc-ha-experience">
 							<div class="year">
@@ -186,8 +186,8 @@ $header_logo = get_theme_mod('header_logo');
 
 	<div class="htc-home-about bg-white htc-sect">
 		<div class="container">
-			<div class="row gx-xl-5 align-items-center">
-				<div class="col-lg-6">
+			<div class="row gx-lg-5 align-items-center">
+				<div class="col-lg-6 mb-lg-0 mb-5">
 					<div class="htc-ha-image">
 						<img src="<?php echo get_field('tnsm_hinh_anh'); ?>" alt="" />
 					</div>
@@ -221,7 +221,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_1_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -237,7 +237,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_2_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -253,7 +253,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_3_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -269,7 +269,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_4_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -285,7 +285,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_5_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -301,7 +301,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_6_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -317,7 +317,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_7_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -333,7 +333,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('spkd_item_8_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<?php echo get_field('spkd_icon'); ?>
@@ -353,28 +353,28 @@ $header_logo = get_theme_mod('header_logo');
 	<div class="htc-home-stats htc-sect">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-3 col-md-6">
+				<div class="col-md-3 col-6">
 					<div class="htc-home-stat">
 						<i class="fa-regular fa-face-smile"></i>
 						<b class="value" akhi="<?php echo get_field('tk_so_khach_hang'); ?>">0</b>
 						<span><?php esc_html_e('Khách hàng', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
-				<div class="col-xl-3 col-md-6">
+				<div class="col-md-3 col-6">
 					<div class="htc-home-stat">
 						<i class="fa-regular fa-hospital"></i>
 						<b class="value" akhi="<?php echo get_field('tk_so_du_an'); ?>">0</b>
 						<span><?php esc_html_e('Dự án', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
-				<div class="col-xl-3 col-md-6">
+				<div class="col-md-3 col-6">
 					<div class="htc-home-stat">
 						<i class="fa-solid fa-headset"></i>
 						<b class="value" akhi="<?php echo get_field('tk_so_gio_ho_tro'); ?>">0</b>
 						<span><?php esc_html_e('Giờ hỗ trợ', 'htc_viglacera'); ?></span>
 					</div>
 				</div>
-				<div class="col-xl-3 col-md-6">
+				<div class="col-md-3 col-6">
 					<div class="htc-home-stat">
 						<i class="fa-regular fa-circle-user"></i>
 						<b class="value" akhi="<?php echo get_field('tk_so_nhan_vien'); ?>">0</b>
@@ -399,7 +399,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_1_icon') && get_field('tnsp_item_1_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_1_icon'); ?>" alt="" />
@@ -415,7 +415,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_2_icon') && get_field('tnsp_item_2_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_2_icon'); ?>" alt="" />
@@ -431,7 +431,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_3_icon') && get_field('tnsp_item_3_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_3_icon'); ?>" alt="" />
@@ -447,7 +447,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_4_icon') && get_field('tnsp_item_4_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_4_icon'); ?>" alt="" />
@@ -463,7 +463,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_5_icon') && get_field('tnsp_item_5_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_5_icon'); ?>" alt="" />
@@ -479,7 +479,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_6_icon') && get_field('tnsp_item_6_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_6_icon'); ?>" alt="" />
@@ -495,7 +495,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_7_icon') && get_field('tnsp_item_7_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_7_icon'); ?>" alt="" />
@@ -511,7 +511,7 @@ $header_logo = get_theme_mod('header_logo');
 					<?php
 					if (get_field('tnsp_item_8_icon') && get_field('tnsp_item_8_tieu_de')) {
 					?>
-						<div class="col-xxl-3 col-xl-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="htc-product-feature">
 								<div class="htc-pf-image">
 									<img src="<?php echo get_field('tnsp_item_8_icon'); ?>" alt="" />
@@ -545,7 +545,7 @@ $header_logo = get_theme_mod('header_logo');
 				$q = new WP_Query($args);
 				if ($q->have_posts()) {
 				?>
-					<div class="row justify-content-center mb-4 mb-xl-5">
+					<div class="row justify-content-center mb-4 mb-lg-5">
 						<?php
 						while ($q->have_posts()) {
 							$q->the_post();
@@ -554,7 +554,7 @@ $header_logo = get_theme_mod('header_logo');
 							$term_1_list = get_the_terms(get_the_ID(), 'thuong-hieu');
 							$term_2_list = get_the_terms(get_the_ID(), 'nhom-san-pham');
 						?>
-							<div class="col-xl-3 col-lg-4 col-md-6">
+							<div class="col-xl-3 col-md-6">
 								<div class="htc-product-item">
 									<a href="<?php echo get_the_permalink(); ?>" class="htc-product-image">
 										<img src="<?php echo $image_url; ?>" alt="<?php echo get_the_title(); ?>" />
@@ -676,7 +676,7 @@ $header_logo = get_theme_mod('header_logo');
 							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 							$image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png');
 						?>
-							<div class="col-lg-4 col-md-6">
+							<div class="col-md-4">
 								<a href="<?php echo get_the_permalink(); ?>" class="htc-project-item">
 									<div class="htc-project-image">
 										<img src="<?php echo $image_url; ?>" alt="<?php echo get_the_title(); ?>" />
@@ -705,7 +705,9 @@ $header_logo = get_theme_mod('header_logo');
 		<div class="container">
 			<div class="row gx-xl-5">
 				<div class="col-lg-6">
-					<img src="<?php echo get_field('lh_hinh_anh'); ?>" class="w-100" />
+					<div class="htc-home-contact-image">
+						<img src="<?php echo get_field('lh_hinh_anh'); ?>" class="w-100" />
+					</div>
 				</div>
 				<div class="col-lg-6 ps-xl-5">
 					<div class="htc-sect-header">
@@ -746,7 +748,7 @@ $header_logo = get_theme_mod('header_logo');
 							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 							$image_url = $image ? $image[0] : get_theme_file_uri('assets/images/no-image.png');
 						?>
-							<div class="col-lg-4 col-md-6">
+							<div class="col-md-4">
 								<a href="<?php echo get_the_permalink(); ?>" class="htc-news-item">
 									<div class="htc-news-date"><?php echo get_the_date(); ?></div>
 									<div class="htc-news-image">
