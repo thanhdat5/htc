@@ -786,6 +786,9 @@ body {
       margin-bottom: 0;
       font-size: 32px;
       border-bottom: 1px rgba($color: #000000, $alpha: 0.2);
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
       p {
         margin-bottom: 0;
       }
@@ -1723,7 +1726,7 @@ body {
         margin-bottom: 40px;
       }
       @media (max-width: 767px) {
-        margin-bottom: 0;
+        margin-bottom: 32px;
       }
       .widget-title {
         font-family: $heading_font_family;
@@ -1780,6 +1783,9 @@ body {
       background-color: $primary_dark_color;
       @media (max-width: 1199px) {
         padding: 32px 32px 24px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 32px;
       }
       img {
         width: auto !important;
@@ -2063,7 +2069,9 @@ body {
 
 .htc-home-features {
   @media (max-width: 767px) {
-    --bs-gutter-y: 32px;
+    .row {
+      --bs-gutter-y: 32px;
+    }
   }
   .htc-sect-header {
     text-align: center;
@@ -2368,6 +2376,9 @@ body {
         @media (max-width: 991px) {
           height: 32px;
         }
+        @media (max-width: 767px) {
+          height: 30px;
+        }
       }
       &:nth-child(1) {
         transform: translateY(0);
@@ -2561,6 +2572,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(max-width:767px){
+    flex-wrap: wrap;
+    gap: 10px;
+    .fcbkbttn_buttons_block{
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
   .fcbkbttn_like,
   .fb-share-button {
     margin: 0 !important;
@@ -2619,7 +2639,15 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  @media (max-width: 767px) {
+    flex-direction: row;
+    margin-top: 24px;
+    gap: 10px;
+  }
   .htc-image-thumbnail {
+    @media (max-width: 767px) {
+      width: calc((100% - 20px) / 4);
+    }
     display: flex;
     width: 100%;
     padding: 4px;

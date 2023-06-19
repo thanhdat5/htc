@@ -18,7 +18,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 <article id="post-<?php the_ID(); ?>" <?php post_class('htc-post'); ?>>
 	<div class="entry-content">
 		<div class="row gx-xl-5">
-			<div class="col-lg-6">
+			<div class="col-lg-6 order-lg-1 order-2 mt-lg-0 mt-5">
 				<!-- Product Images -->
 				<?php
 				if (!$hinh_anh_khac_1 && !$hinh_anh_khac_2 && !$hinh_anh_khac_3 && !$hinh_anh_khac_4) {
@@ -28,7 +28,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 				} else {
 				?>
 					<div class="row">
-						<div class="col-xl-2 col-lg-3">
+						<div class="col-xl-2 col-md-3 order-md-1 order-2">
 							<div class="htc-product-images">
 								<span class="htc-image-thumbnail active" id="thumbnail0">
 									<img src="<?php echo $image_url; ?>" />
@@ -75,7 +75,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 								?>
 							</div>
 						</div>
-						<div class="col-xl-10 col-lg-9">
+						<div class="col-xl-10 col-md-9 order-md-2 order-1">
 							<img class="w-100 htc-image-preview" src="<?php echo $image_url; ?>" alt="<?php echo get_the_title(); ?>" />
 						</div>
 					</div>
@@ -84,7 +84,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 				?>
 
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 order-lg-2 order-1">
 				<!-- Product Info -->
 				<h1 class="htc-post-title"><?php the_title(); ?></h1>
 				<div class="htc-post-meta">
@@ -171,7 +171,7 @@ $hinh_anh_khac_4 = get_field('hinh_anh_khac_4');
 			</div>
 		</div>
 		<!-- Product Detail -->
-		<div class="mt-5 pt-4">
+		<div class="mt-5 pt-md-4">
 			<div class="row">
 				<div class="col-lg-9">
 					<?php

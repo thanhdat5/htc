@@ -12,6 +12,9 @@ jQuery(function () {
         jQuery("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     })
+    window.setTimeout(() => {
+        jQuery('.htc-loading').fadeOut(300)
+    }, 600)
 })
 
 let startCount = false;
@@ -41,9 +44,9 @@ jQuery(window).on('scroll', function () {
         });
     }
 
-    if(jQuery(window).scrollTop() > 200){
+    if (jQuery(window).scrollTop() > 200) {
         jQuery(".htc-scroll-top").addClass('show');
-    }else{
+    } else {
         jQuery(".htc-scroll-top").removeClass('show');
     }
 });

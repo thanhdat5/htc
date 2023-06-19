@@ -6,6 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<?php wp_head(); ?>
+	<style>
+		.htc-loading{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: 9999;
+			background-color: #fff;
+			transition: all ease-in-out .3s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: wait;
+		}
+	</style>
 </head>
 
 <?php
@@ -17,6 +33,9 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 	<?php wp_body_open(); ?>
 
 	<a href="#main" class="visually-hidden-focusable"><?php esc_html_e('Skip to main content', 'htc_viglacera'); ?></a>
+	<div class="htc-loading">
+		<img src="<?php echo get_theme_file_uri('assets/images/loading.gif'); ?>" />
+	</div>
 
 	<header class="htc-header">
 		<div class="htc-header-top">
